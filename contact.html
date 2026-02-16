@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Master DMT | UAB Barcelona</title>
+  <meta name="description" content="Get in touch with the Master's programme in Dance Movement Therapy at UAB Barcelona. Contact form, email, and location information.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💃</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">&#9830;</div>
+        Master DMT <span>| UAB</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">What is DMT?</a>
+        <a href="program.html">Program</a>
+        <a href="team.html">Team</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="contact.html" class="active">Contact</a>
+        <div class="lang-switch">
+          <a href="#" class="active">EN</a>
+          <a href="#">ES</a>
+          <a href="#">CA</a>
+        </div>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <a href="contact.html">Contact</a>
+      </div>
+      <h1>Contact Us</h1>
+      <p>Have questions about the programme? We'd love to hear from you.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-form reveal-left">
+          <h3 style="margin-bottom: 0.5rem;">Send Us a Message</h3>
+          <p style="margin-bottom: 2rem; font-size: 0.95rem;">Fill out the form below and we'll get back to you as soon as possible.</p>
+          <form id="contactForm" action="#" method="post">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" required placeholder="Your full name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="">Select a topic...</option>
+                <option value="admissions">Admissions &amp; Requirements</option>
+                <option value="programme">Programme Content</option>
+                <option value="fees">Fees &amp; Scholarships</option>
+                <option value="international">International Students</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" required placeholder="Your message..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; justify-content: center;">
+              Send Message &#8594;
+            </button>
+          </form>
+        </div>
+        <div class="contact-info reveal-right">
+          <h3>Get in Touch</h3>
+          <p>You can reach us through the form, by email, or visit us at the UAB campus.</p>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">&#9993;</div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:master.dmt@uab.es">master.dmt@uab.es</a></p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">&#128205;</div>
+            <div>
+              <h4>Address</h4>
+              <p>Universitat Autonoma de Barcelona<br>
+                 Facultat de Psicologia<br>
+                 08193 Bellaterra (Cerdanyola del Valles)<br>
+                 Barcelona, Spain</p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">&#128336;</div>
+            <div>
+              <h4>Office Hours</h4>
+              <p>Monday - Friday: 10:00 - 14:00<br>
+                 (During academic term)</p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">&#127758;</div>
+            <div>
+              <h4>Social Media</h4>
+              <p>Follow us for news, events, and community updates.</p>
+            </div>
+          </div>
+
+          <div class="info-card" style="margin-top: 2rem;">
+            <div class="info-card-header">
+              <div class="info-card-icon">&#128161;</div>
+              <h3>Information Sessions</h3>
+            </div>
+            <p style="padding: 0 0 1rem; color: var(--color-text-light); font-size: 0.95rem;">
+              We offer periodic information sessions for prospective students. These sessions
+              provide an overview of the programme, an introduction to DMT, and an opportunity
+              to ask questions. Contact us to learn about upcoming dates.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content reveal">
+        <h2>Ready to Begin?</h2>
+        <p>Explore the programme details and start your application today.</p>
+        <div>
+          <a href="admissions.html" class="btn btn-primary btn-lg">View Admissions &#8594;</a>
+          <a href="program.html" class="btn btn-secondary btn-lg" style="margin-left:1rem;">Programme Details</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <div class="nav-logo-icon">&#9830;</div>
+            Master DMT <span>| UAB</span>
+          </a>
+          <p>Master's Degree in Dance Movement Therapy at Universitat Autonoma de Barcelona.
+             Training professionals in DMT since 2003.</p>
+        </div>
+        <div>
+          <h4>Programme</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">What is DMT?</a></li>
+            <li><a href="program.html">Master's Degree</a></li>
+            <li><a href="program.html#curriculum">Curriculum</a></li>
+            <li><a href="team.html">Teaching Team</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Admissions</h4>
+          <ul class="footer-links">
+            <li><a href="admissions.html">Requirements</a></li>
+            <li><a href="admissions.html#process">Application Process</a></li>
+            <li><a href="admissions.html#fees">Fees &amp; Funding</a></li>
+            <li><a href="admissions.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:master.dmt@uab.es">master.dmt@uab.es</a></li>
+            <li><a href="contact.html">Contact Form</a></li>
+            <li><a href="#">UAB Campus</a></li>
+            <li><a href="#">Barcelona, Spain</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Master DMT &mdash; Universitat Autonoma de Barcelona. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">in</a>
+          <a href="#" aria-label="LinkedIn">Li</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
+  <script src="js/main.js"></script>
+</body>
+</html>
