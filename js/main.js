@@ -12,13 +12,18 @@
   const navLinks = document.getElementById('navLinks');
   const navOverlay = document.getElementById('navOverlay');
 
+  // Check if this is the homepage (navbar starts transparent)
+  var isHomepage = navbar && !navbar.classList.contains('scrolled');
+
   // Scroll handling for navbar
   function handleScroll() {
     if (!navbar) return;
-    if (window.scrollY > 50) {
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
+    if (isHomepage) {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
     }
 
     // Back to top button
@@ -161,7 +166,13 @@
       e.preventDefault();
       var btn = this.querySelector('button[type="submit"]');
       var originalText = btn.innerHTML;
-      btn.innerHTML = 'Message Sent! &#10003;';
+      var lang = document.documentElement.lang || 'es';
+      var successMsg = {
+        es: '\u00a1Mensaje Enviado! \u2713',
+        en: 'Message Sent! \u2713',
+        ca: 'Missatge Enviat! \u2713'
+      };
+      btn.textContent = successMsg[lang] || successMsg.es;
       btn.style.background = 'var(--color-primary-dark)';
       setTimeout(function () {
         btn.innerHTML = originalText;
