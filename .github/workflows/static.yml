@@ -4,7 +4,7 @@ name: Deploy static content to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["claude/create-masterdmt-inspired-site-Jbi4y"]
+    branches: ["claude/deploy-masterdmt-fix-Rbq5K"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
